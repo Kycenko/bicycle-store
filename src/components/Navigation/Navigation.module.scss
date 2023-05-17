@@ -1,0 +1,28 @@
+.navigation {
+  padding: 20px 0;
+  background-color: #171718;
+  color: #fff;
+  border-bottom: 1px solid red;
+
+  .container {
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+
+    .navigationRow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 30px;
+      
+      .navigationLogo {
+
+      }
+
+      .navigationList {
+
+      }
+    }
+  }
+}
