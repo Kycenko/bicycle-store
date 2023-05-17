@@ -2,7 +2,11 @@
   padding: 20px 0;
   background-color: #171718;
   color: #fff;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #26292D;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
   .container {
     align-items: center;
@@ -12,16 +16,35 @@
 
     .navigationRow {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       column-gap: 30px;
-      
+      row-gap: 20px;
+
       .navigationLogo {
 
+        .navigationLogoLink {
+          font-family: "JetBrains Mono", serif;
+          color: #fff;
+          text-decoration: none;
+        }
       }
 
       .navigationList {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        list-style: none;
 
+        .navigationListItem {
+
+          .navigationListItemLink {
+            font-family: "JetBrains Mono", serif;
+            color: #fff;
+            text-decoration: none;
+          }
+        }
       }
     }
   }

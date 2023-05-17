@@ -1,0 +1,22 @@
+.header {
+  background-color: #171718;
+  background-image: url("public/img/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  min-height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .headerWrapper {
+    padding: 0 15px;
+    max-width: 660px;
+
+
+    .headerTitle {
+      font-family: "JetBrains Mono", serif;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+
+.container {
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-bottom: 30px;
+
+  .root {
+    li {
+      display: inline-block;
+
+      a {
+        font-family: "JetBrains Mono", serif;
+        text-align: center;
+        width: 30px;
+        line-height: 42px;
+        height: 45px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+        display: inline-block;
+        color: black;
+
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+
+    :global {
+
+      .selected {
+
+        a {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+
