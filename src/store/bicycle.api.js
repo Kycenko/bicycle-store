@@ -10,7 +10,7 @@ export const bicycleApi = createApi({
 				query: () => '/bicycles'
 			}),
 			getSingleBicycle: build.query({
-				query: (id) => `/bicycles${id}`
+				query: (id) => `/bicycles/${id}`
 			})
 		}
 	)

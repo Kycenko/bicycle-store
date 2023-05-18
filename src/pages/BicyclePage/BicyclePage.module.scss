@@ -1,0 +1,18 @@
+.container {
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+
+  .bicycleContainer {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+    border: 1px solid red;
+    img {
+      width: 100%;
+    }
+  }
+}

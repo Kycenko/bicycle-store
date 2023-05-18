@@ -2,6 +2,8 @@ import styles from './BicycleItem.module.scss'
 import {Link} from "react-router-dom";
 
 const BicycleItem = ({data}) => {
+	if (!data.length) return <div>Велосипеды не найдены!</div>
+	
 	return (
 		<main className={styles.section}>
 			<div className={styles.container}>
@@ -9,10 +11,17 @@ const BicycleItem = ({data}) => {
 				<ul className={styles.products}>
 					{data?.map(bicycle => <li className={styles.product} key={bicycle.id}>
 						<Link to={`/bicycle/${bicycle.id}`}>
-							{<img className={styles.productImage} src={`${bicycle.image}`} alt={bicycle.title} />}
+							{<img className={styles.productImage} src={`${bicycle.image}`} alt={bicycle.title}/>}
 						</Link>
-						<h3 className={styles.productTitle}>{bicycle.title}</h3>
-						<p className={styles.productPrice}>{bicycle.price} тыс.руб</p>
+						<div className={styles.productTitleContainer}>
+							<h3 className={styles.productTitle}>{bicycle.title}</h3>
+							<img src="/public/img/add-to-favorites-icon.svg" alt=""/>
+						</div>
+						<div className={styles.productPriceContainer}>
+							<p className={styles.productPrice}>{bicycle.price} тыс.руб</p>
+							<img src="/public/img/add-to-cart-icon.svg" alt=""/>
+						</div>
+					
 					</li>)}
 				</ul>
 			</div>

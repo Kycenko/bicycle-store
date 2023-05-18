@@ -28,15 +28,38 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         background-color: #fff;
 
-        .productTitle {
-          font-family: "JetBrains Mono", serif;
-          padding: 15px 20px 5px;
+        .productTitleContainer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 10px 0 0;
+
+          img {
+            width: 25px;
+          }
+
+          .productTitle {
+            font-family: "JetBrains Mono", serif;
+            padding: 15px 20px 5px;
+          }
         }
 
-        .productPrice {
-          font-family: "JetBrains Mono", serif;
-          padding: 5px 20px 15px;
+        .productPriceContainer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 10px 10px 0;
+
+          img {
+            width: 30px;
+          }
+
+          .productPrice {
+            font-family: "JetBrains Mono", serif;
+            padding: 5px 20px 15px;
+          }
         }
+
 
         .productImage {
           width: 100%;
