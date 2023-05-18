@@ -1,5 +1,7 @@
 import styles from './BicycleItem.module.scss'
 import {Link} from "react-router-dom";
+import AddBicycleInFavorite from "../AddBicycleInFavorite/AddBicycleInFavorite.jsx";
+import AddBicycleInCart from "../AddBicycleInCart/AddBicycleInCart.jsx";
 
 const BicycleItem = ({data}) => {
 	if (!data.length) return <div>Велосипеды не найдены!</div>
@@ -15,13 +17,12 @@ const BicycleItem = ({data}) => {
 						</Link>
 						<div className={styles.productTitleContainer}>
 							<h3 className={styles.productTitle}>{bicycle.title}</h3>
-							<img src="/public/img/add-to-favorites-icon.svg" alt=""/>
+							<AddBicycleInFavorite data={bicycle}/>
 						</div>
 						<div className={styles.productPriceContainer}>
 							<p className={styles.productPrice}>{bicycle.price} тыс.руб</p>
-							<img src="/public/img/add-to-cart-icon.svg" alt=""/>
+							<AddBicycleInCart data={bicycle}/>
 						</div>
-					
 					</li>)}
 				</ul>
 			</div>

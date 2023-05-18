@@ -10,12 +10,15 @@ const BicyclePage = () => {
 	if (isLoading) return <div></div>
 	
 	return (
-		<div className={styles.container}>
-			<div className={styles.bicycleContainer}>
-				{<img src={`${data.image}`} alt=""/>}
+		<>
+			<Navigation/>
+			<div className={styles.container}>
+				<div className={styles.bicycleContainer}>
+					{<img src={`${data.image}`} alt=""/>}
+				</div>
 			</div>
-			
-		</div>
+			<Footer/>
+		</>
 	);
 };
 

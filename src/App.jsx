@@ -4,6 +4,8 @@ import './index.scss'
 import {Provider} from "react-redux";
 import {store} from "./store/store.js";
 import BicyclePage from "./pages/BicyclePage/BicyclePage.jsx";
+import CartPage from "./pages/CartPage/CartPage.jsx";
+import FavoritePage from "./pages/FavoritePage/FavoritePage.jsx";
 
 const App = () => {
 	return (
@@ -12,6 +14,8 @@ const App = () => {
 				<Routes>
 					<Route path='/' element={<HomePage/>}/>
 					<Route path='/bicycle/:id' element={<BicyclePage/>}/>
+					<Route path='/cart' element={<CartPage/>}/>
+					<Route path='/favorites' element={<FavoritePage/>}/>
 					<Route element={<div>Page not found!</div>} path={'*'}/>
 				</Routes>
 			</BrowserRouter>

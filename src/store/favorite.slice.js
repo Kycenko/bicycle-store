@@ -13,7 +13,7 @@ const favoriteSlice = createSlice({
 			state.bicyclesInFavorite.push(action.payload)
 		},
 		removeBicycleInFavorite: (state, action) => {
-			state.bicyclesInFavorite.filter(bicycle => bicycle.id !== action.payload)
+			state.bicyclesInFavorite = state.bicyclesInFavorite.filter(bicycle => bicycle.id !== action.payload)
 		}
 	}
 })
