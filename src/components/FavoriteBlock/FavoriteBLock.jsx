@@ -2,6 +2,7 @@ import React from 'react';
 import {useNavigate} from "react-router-dom";
 import {useSelector} from "react-redux";
 import styles from './FavoriteBlock.module.scss'
+
 const FavoriteBlock = () => {
 	const navigate = useNavigate()
 	const bicycles = useSelector((state) => state.favorite.bicyclesInFavorite)
@@ -17,7 +18,8 @@ const FavoriteBlock = () => {
 				className={styles.favoriteIcon}
 				alt=""
 			/>
-			<div className={styles.bicyclesInFavorite}>{bicycles.length}</div>
+			{bicycles.length === 0 ? <div></div> : <div className={styles.bicyclesInFavorite}>{bicycles.length}</div>}
+		
 		</div>
 	)
 };

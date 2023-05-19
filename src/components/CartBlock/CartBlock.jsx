@@ -2,6 +2,7 @@ import React from 'react';
 import {useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
 import styles from './CartBlock.module.scss'
+
 const CartBlock = () => {
 	const navigate = useNavigate()
 	const bicycles = useSelector((state) => state.cart.bicyclesInCart)
@@ -17,7 +18,7 @@ const CartBlock = () => {
 				className={styles.cartIcon}
 				alt=""
 			/>
-			<div className={styles.bicyclesInCart}>{bicycles.length}</div>
+			{bicycles.length === 0 ? <div></div> : <div className={styles.bicyclesInCart}>{bicycles.length}</div>}
 		</div>
 	)
 };

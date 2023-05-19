@@ -6,31 +6,30 @@
   max-width: 1200px;
 
   .productPage {
+    padding: 100px 0 100px 0;
     display: flex;
+    justify-content: space-between;
   }
 
-  .productPageVideo {
-    width: 50%;
-  }
 
   .productPageDetails {
-    width: 50%;
+    width: 400px;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     display: flex;
+    flex-direction: column;
   }
 
   .productPageImage {
-    width: 50%;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
+    width: 100%;
+    height: 400px;
   }
 
 
   .productPageInfo {
-    width: 50%;
-    padding: 20px;
+    align-items: center;
+    padding: 10px;
 
     h2 {
       font-size: 24px;
@@ -42,3 +41,46 @@
     }
   }
 }
+
+.slideStyle {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+.sliderStyle {
+  height: 100%;
+  position: relative;
+  color: black;
+}
+
+.leftArrow {
+  position: absolute;
+  transform: translate(0, -100%);
+  font-size: 35px;
+  background-color: black;
+  color: #fff;
+  border-radius: 15px;
+  left: -30px;
+  padding: 5px;
+  z-index: 1;
+  cursor: pointer;
+
+}
+
+.rightArrow {
+  position: absolute;
+  transform: translate(0, -100%);
+  right: -30px;
+  font-size: 35px;
+  color: #fff;
+  background-color: black;
+  border-radius: 15px;
+  padding: 5px;
+  z-index: 1;
+  cursor: pointer
+}
+
+

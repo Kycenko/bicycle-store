@@ -3,10 +3,8 @@
   background-color: #171718;
   color: #fff;
   border-bottom: 1px solid #26292D;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 9999;
 
   .container {
