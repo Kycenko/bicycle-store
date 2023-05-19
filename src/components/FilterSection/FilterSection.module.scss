@@ -1,0 +1,13 @@
+.container {
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+
+  .filters {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 20px 0;
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {addBicycleInFavorite, removeBicycleInFavorite} from "../../store/favorite.slice.js";
+import styles from "./AddBicycleInFavorite.module.scss";
 
 const AddBicycleInFavorite = ({data}) => {
 	const dispatch = useDispatch()
@@ -15,7 +16,7 @@ const AddBicycleInFavorite = ({data}) => {
 			dispatch(addBicycleInFavorite(data))
 		}
 	}
-	return (<div>
+	return (<div className={styles.favoriteIcon}>
 		{isBicycleInFavorite ? (<img
 			onClick={handleFavoriteClick}
 			src="/public/img/remove-from-favorites-icon.svg"

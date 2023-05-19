@@ -1,22 +1,40 @@
-
-import Navigation from "../../components/Navigation/Navigation.jsx";
+import Navigation from "../../components/Layout/Navigation/Navigation.jsx";
 import Header from "../../components/Header/Header.jsx";
 import BicycleItem from "../../components/BicycleItem/BicycleItem.jsx";
 import {useGetBicyclesQuery} from "../../store/bicycle.api.js";
-import Footer from "../../components/Footer/Footer.jsx";
+import Footer from "../../components/Layout/Footer/Footer.jsx";
 import Pagination from "../../components/Pagination/Pagination.jsx";
-import Search from "../../components/Search/Search.jsx";
+import {useDispatch, useSelector} from "react-redux";
+import {setCurrentPage} from "../../store/initial.slice.js";
+import Spinner from "../../components/Layout/Spinner/Spinner.jsx";
+import FilterSection from "../../components/FilterSection/FilterSection.jsx";
+
 const HomePage = () => {
-	const {data = [], isLoading} = useGetBicyclesQuery()
-	if(isLoading) return <div></div>
+	const dispatch = useDispatch()
+	const {search, currentPage, category} = useSelector(
+		state => state.initial
+	)
+	const body = {
+		page: currentPage,
+		search: search,
+		category: category
+	}
+	
+	const {data = [], isLoading} = useGetBicyclesQuery(body)
+	
+	const onChangePage = page => {
+		dispatch(setCurrentPage(page))
+	}
+	
+	if (isLoading) return <Spinner/>
 	
 	return (
 		<div>
-		<Navigation/>
+			<Navigation/>
 			<Header/>
-			<Search/>
+			<FilterSection/>
 			<BicycleItem data={data} key={data.id}/>
-			<Pagination/>
+			<Pagination currentPage={currentPage} onChangePage={onChangePage}/>
 			<Footer/>
 		</div>
 	);

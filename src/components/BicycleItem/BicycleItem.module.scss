@@ -8,11 +8,17 @@
     max-width: 1200px;
 
     .sectionTitle {
-      font-family: "JetBrains Mono", serif;
-      margin-bottom: 60px;
+      margin-bottom: 20px;
       font-size: 60px;
       font-weight: 700;
       text-align: center;
+    }
+
+    .filterContainer {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 20px 0;
     }
 
     .products {
@@ -39,7 +45,6 @@
           }
 
           .productTitle {
-            font-family: "JetBrains Mono", serif;
             padding: 15px 20px 5px;
           }
         }
@@ -55,11 +60,9 @@
           }
 
           .productPrice {
-            font-family: "JetBrains Mono", serif;
             padding: 5px 20px 15px;
           }
         }
-
 
         .productImage {
           width: 100%;

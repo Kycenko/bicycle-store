@@ -7,12 +7,17 @@ export const bicycleApi = createApi({
 	endpoints: build => (
 		{
 			getBicycles: build.query({
-				query: () => '/bicycles'
+				query: (body) => body.search === ''
+					? `/bicycles?category_like=${body.category}&_page=${body.page}&_limit=6`
+					: `/bicycles?title_like=${body.search}&_limit=6`
 			}),
 			getSingleBicycle: build.query({
 				query: (id) => `/bicycles/${id}`
+			}),
+			getBicycleCategory: build.query({
+				query: () => '/categories'
 			})
 		}
 	)
 })
-export const {useGetBicyclesQuery, useGetSingleBicycleQuery} = bicycleApi
+export const {useGetBicyclesQuery, useGetSingleBicycleQuery, useGetBicycleCategoryQuery} = bicycleApi

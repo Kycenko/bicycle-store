@@ -1,7 +1,7 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {addBicycleInCart, removeBicycleInCart} from "../../store/cart.slice.js";
-
+import styles from './AddBicycleInCart.module.scss'
 const AddBicycleInCart = ({data}) => {
 	const dispatch = useDispatch()
 	const addBicycle = useSelector(state => state.cart.bicyclesInCart)
@@ -15,7 +15,7 @@ const AddBicycleInCart = ({data}) => {
 		}
 	}
 	return (
-		<div>
+		<div className={styles.cartIcon}>
 			{isBicycleInCart ? (
 				<img
 					onClick={handleCartClick}

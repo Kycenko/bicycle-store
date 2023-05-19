@@ -1,0 +1,17 @@
+.cartEmpty {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  text-align: center;
+
+  .cartEmptyImage {
+    width: 300px;
+  }
+
+  .cartEmptyMessage {
+    font-size: 25px;
+  }
+}
