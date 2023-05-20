@@ -39,7 +39,6 @@ const BicyclePage = () => {
 						></iframe>
 					</div>
 					<div className={styles.productPageDetails}>
-						
 						<div className={styles.productPageImage}>
 							<img src={`${data.sliderImages[currentIndex]}`} alt={data.title}/>
 						</div>
@@ -60,7 +59,7 @@ const BicyclePage = () => {
 						<div className={styles.productPageInfo}>
 							<h2>{data.title}</h2>
 							<p>Описание товара</p>
-								<p>Цена: {data.price} бел.руб</p>
+							<p>Цена: {data.price} бел.руб</p>
 						</div>
 					</div>
 				</div>

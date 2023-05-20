@@ -3,7 +3,7 @@ import styles from './CartPage.module.scss'
 import Navigation from "../../components/Layout/Navigation/Navigation.jsx";
 import Footer from "../../components/Layout/Footer/Footer.jsx";
 import {decreaseQuantity, increaseQuantity, removeBicycleInCart} from "../../store/cart.slice.js";
-import CartEmpty from "../../components/CartEmpty/CartEmpty.jsx";
+import CartEmpty from "../../components/shared/CartEmpty/CartEmpty.jsx";
 
 const CartPage = () => {
 	const dispatch = useDispatch()

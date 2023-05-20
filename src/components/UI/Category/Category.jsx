@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import {useGetBicycleCategoryQuery} from "../../store/bicycle.api.js";
+import {useGetBicycleCategoryQuery} from "../../../store/bicycle.api.js";
 import {useDispatch} from "react-redux";
-import {setCategory} from "../../store/initial.slice.js";
+import {setCategory} from "../../../store/initial.slice.js";
 import styles from './Category.module.scss'
 
 const Category = () => {

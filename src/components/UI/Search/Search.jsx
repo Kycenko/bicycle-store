@@ -1,5 +1,5 @@
 import styles from './Search.module.scss'
-import {setSearch} from "../../store/initial.slice.js";
+import {setSearch} from "../../../store/initial.slice.js";
 import {useDispatch} from "react-redux";
 import {useEffect, useState} from "react";
 

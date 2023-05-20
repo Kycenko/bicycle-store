@@ -1,7 +1,7 @@
 import styles from './Navigation.module.scss'
 import {Link} from "react-router-dom";
-import FavoriteBLock from "../../FavoriteBlock/FavoriteBLock.jsx";
-import CartBlock from "../../CartBlock/CartBlock.jsx";
+import FavoriteBLock from "../../UI/icons/FavoriteBlock/FavoriteBLock.jsx";
+import CartBlock from "../../UI/icons/CartBlock/CartBlock.jsx";
 
 const Navigation = () => {
 	return (<nav className={styles.navigation}>

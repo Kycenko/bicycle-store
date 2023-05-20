@@ -1,5 +1,4 @@
 import Navigation from "../../components/Layout/Navigation/Navigation.jsx";
-import Header from "../../components/Header/Header.jsx";
 import BicycleItem from "../../components/BicycleItem/BicycleItem.jsx";
 import {useGetBicyclesQuery} from "../../store/bicycle.api.js";
 import Footer from "../../components/Layout/Footer/Footer.jsx";
@@ -7,7 +6,8 @@ import Pagination from "../../components/Pagination/Pagination.jsx";
 import {useDispatch, useSelector} from "react-redux";
 import {setCurrentPage} from "../../store/initial.slice.js";
 import Spinner from "../../components/Layout/Spinner/Spinner.jsx";
-import FilterSection from "../../components/FilterSection/FilterSection.jsx";
+import Header from "../../components/shared/Header/Header.jsx";
+import FilterSection from "../../components/shared/FilterSection/FilterSection.jsx";
 
 const HomePage = () => {
 	const dispatch = useDispatch()

@@ -1,7 +1,7 @@
 
 import styles from './FilterSection.module.scss'
-import Search from "../Search/Search.jsx";
-import Category from "../Category/Category.jsx";
+import Search from "../../UI/Search/Search.jsx";
+import Category from "../../UI/Category/Category.jsx";
 const FilterSection = () => {
 	return (
 		<div className={styles.container}>

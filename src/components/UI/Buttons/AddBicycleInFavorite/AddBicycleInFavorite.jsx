@@ -1,6 +1,6 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {addBicycleInFavorite, removeBicycleInFavorite} from "../../store/favorite.slice.js";
+import {addBicycleInFavorite, removeBicycleInFavorite} from "../../../../store/favorite.slice.js";
 import styles from "./AddBicycleInFavorite.module.scss";
 
 const AddBicycleInFavorite = ({data}) => {
