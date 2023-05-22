@@ -36,7 +36,7 @@ const Search = () => {
 					onKeyPress={handleKeyPress}
 				/>
 				<button className={styles.searchButton} onClick={handleSearch}>
-					<img src="/public/img/search-icon.svg" alt="" />
+					<img src="/public/icons/search-icon.svg" alt="" />
 				</button>
 			</div>
 		</div>

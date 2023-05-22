@@ -19,11 +19,11 @@ const AddBicycleInFavorite = ({data}) => {
 	return (<div className={styles.favoriteIcon}>
 		{isBicycleInFavorite ? (<img
 			onClick={handleFavoriteClick}
-			src="/public/img/remove-from-favorites-icon.svg"
+			src="/public/icons/remove-from-favorites-icon.svg"
 			alt=""
 		/>) : (<img
 			onClick={handleFavoriteClick}
-			src="/public/img/add-to-favorites-icon.svg"
+			src="/public/icons/add-to-favorites-icon.svg"
 			alt=""
 		/>)}
 	</div>)

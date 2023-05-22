@@ -19,13 +19,13 @@ const AddBicycleInCart = ({data}) => {
 			{isBicycleInCart ? (
 				<img
 					onClick={handleCartClick}
-					src="/public/img/remove-from-cart-icon.svg"
+					src="/public/icons/remove-from-cart-icon.svg"
 					alt=""
 				/>
 			) : (
 				<img
 					onClick={handleCartClick}
-					src="/public/img/add-to-cart-icon.svg"
+					src="/public/icons/add-to-cart-icon.svg"
 					alt=""
 				/>
 			)}

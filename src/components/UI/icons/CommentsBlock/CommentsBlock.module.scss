@@ -1,0 +1,12 @@
+.commentsBlock {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .commentsIcon {
+    cursor: pointer;
+    position: relative;
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -14,7 +14,7 @@ const FavoriteBlock = () => {
 		<div className={styles.favoriteBlock}>
 			<img
 				onClick={navigateToFavorite}
-				src="/img/favorite-svgrepo-com.svg"
+				src="/icons/favorite-svgrepo-com.svg"
 				className={styles.favoriteIcon}
 				alt=""
 			/>

@@ -14,7 +14,7 @@ const CartBlock = () => {
 		<div className={styles.cartBlock}>
 			<img
 				onClick={navigateToCart}
-				src="/img/shopping-cart-icon.svg"
+				src="/icons/shopping-cart-icon.svg"
 				className={styles.cartIcon}
 				alt=""
 			/>

@@ -1,34 +1,68 @@
 .container {
-
   align-items: center;
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1200px;
 
   .productPage {
-    padding: 100px 0 100px 0;
+    padding: 100px 0;
     display: flex;
     justify-content: space-between;
   }
 
+  .videoContainer {
+    width: 630px;
+    height: 400px;
 
-  .productPageDetails {
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .productContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 400px;
     height: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
   }
 
-  .productPageImage {
+  .imageContainer {
+    position: relative;
     width: 100%;
-    height: 400px;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
+  .arrowContainer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    right: -30px;
+    transform: translateY(-50%);
+  }
 
-  .productPageInfo {
-    align-items: center;
+  .leftArrow,
+  .rightArrow {
+    font-size: 35px;
+    background-color: black;
+    color: #fff;
+    border-radius: 15px;
+    padding: 5px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .productInfo {
     padding: 10px;
 
     h2 {
@@ -57,30 +91,30 @@
 }
 
 .leftArrow {
-  position: absolute;
-  transform: translate(0, -100%);
-  font-size: 35px;
-  background-color: black;
-  color: #fff;
-  border-radius: 15px;
-  left: -30px;
-  padding: 5px;
-  z-index: 1;
-  cursor: pointer;
 
 }
 
 .rightArrow {
-  position: absolute;
-  transform: translate(0, -100%);
-  right: -30px;
-  font-size: 35px;
-  color: #fff;
-  background-color: black;
-  border-radius: 15px;
-  padding: 5px;
-  z-index: 1;
-  cursor: pointer
+
 }
 
+.cartInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
 
+  img {
+    width: 30px;
+  }
+}
+
+.favoriteInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 30px;
+  }
+}

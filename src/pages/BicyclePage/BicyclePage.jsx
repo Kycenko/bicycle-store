@@ -5,6 +5,8 @@ import {useGetSingleBicycleQuery} from "../../store/bicycle.api.js";
 import styles from './BicyclePage.module.scss'
 import Spinner from "../../components/Layout/Spinner/Spinner.jsx";
 import {useState} from "react";
+import AddBicycleInFavorite from "../../components/ui/buttons/AddBicycleInFavorite/AddBicycleInFavorite.jsx";
+import AddBicycleInCart from "../../components/ui/buttons/AddBicycleInCart/AddBicycleInCart.jsx";
 
 const BicyclePage = () => {
 	const {id} = useParams()
@@ -29,44 +31,42 @@ const BicyclePage = () => {
 			<Navigation/>
 			<div className={styles.container}>
 				<div className={styles.productPage}>
-					<div>
+					<div className={styles.videoContainer}>
 						<iframe
-							width="600"
-							height="400"
 							src={`${data.video}`}
 							title="Видео"
 							allowFullScreen
 						></iframe>
 					</div>
-					<div className={styles.productPageDetails}>
-						<div className={styles.productPageImage}>
+					<div className={styles.productContainer}>
+						<div className={styles.imageContainer}>
 							<img src={`${data.sliderImages[currentIndex]}`} alt={data.title}/>
-						</div>
-						<div>
-							{data.sliderImages.map(image => (
-								<div key={image.id}>
-									<div className={styles.sliderStyle}>
-										<div onClick={prevSlide} className={styles.leftArrow}>
-											←
-										</div>
-										<div onClick={nextSlide} className={styles.rightArrow}>
-											→
-										</div>
-									</div>
+							<div className={styles.arrowContainer}>
+								<div onClick={prevSlide} className={styles.leftArrow}>
+									←
 								</div>
-							))}
+								<div onClick={nextSlide} className={styles.rightArrow}>
+									→
+								</div>
+							</div>
 						</div>
-						<div className={styles.productPageInfo}>
+						<div className={styles.productInfo}>
 							<h2>{data.title}</h2>
-							<p>Описание товара</p>
-							<p>Цена: {data.price} бел.руб</p>
+							<div className={styles.cartInfo}>
+								<p>Описание товара</p>
+								<AddBicycleInFavorite data={data}/>
+							</div>
+							<div className={styles.favoriteInfo}>
+								<p>Цена: {data.price} бел.руб</p>
+								<AddBicycleInCart data={data}/>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
 			<Footer/>
 		</>
+	
 	);
 };
 
