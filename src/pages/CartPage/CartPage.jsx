@@ -38,15 +38,6 @@ const CartPage = () => {
 				<div className={styles.container}>
 					<h2 className={styles.cartPageTitle}>Корзина</h2>
 					<table className={styles.cartPageTable}>
-						<thead>
-						{/*	<tr>
-						<th>Изображение</th>
-						<th>Название</th>
-						<th>Стоимость</th>
-						<th>Количество</th>
-						<th>Действие</th>
-					</tr>*/}
-						</thead>
 						<tbody>
 						{items.map((item) => (
 							<tr key={item.id}>

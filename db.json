@@ -1,112 +1,115 @@
 {
-	"bicycles": [
-		{
-			"id": 1,
-			"title": "Велосипед 1",
-			"price": 2000,
-			"quantity": 1,
-			"category": "Горный",
-			"image": "https://i.pinimg.com/originals/fc/0f/4c/fc0f4cc14a660cabddd7a92ddc56f30c.png",
-			"video": "https://youtu.be/HhS0U5CTQoY",
-			"sliderImages": [
-				"/public//img/23483-6-bicycle-transparent-image.png",
-				"https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
-			]
-		},
-		{
-			"id": 2,
-			"title": "Велосипед 2",
-			"price": 2000,
-			"quantity": 1,
-			"category": "Горный",
-			"image": "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png",
-			"video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
-			"sliderImages": [
-				"/public//img/23483-6-bicycle-transparent-image.png",
-				"https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
-			]
-		},
-		{
-			"id": 3,
-			"title": "Велосипед 3",
-			"price": 2000,
-			"quantity": 1,
-			"category": "Дорожный",
-			"image": "https://i.pinimg.com/originals/fc/0f/4c/fc0f4cc14a660cabddd7a92ddc56f30c.png",
-			"video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
-			"sliderImages": [
-				"/public//img/23483-6-bicycle-transparent-image.png",
-				"https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
-			]
-		},
-		{
-			"id": 4,
-			"title": "Велосипед 4",
-			"price": 2000,
-			"quantity": 1,
-			"category": "Горный",
-			"image": "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png",
-			"video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
-			"sliderImages": [
-				"/public//img/23483-6-bicycle-transparent-image.png",
-				"https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
-			]
-		},
-		{
-			"id": 5,
-			"title": "Велосипед 5",
-			"price": 2000,
-			"quantity": 1,
-			"category": "Дорожный",
-			"image": "https://i.pinimg.com/originals/fc/0f/4c/fc0f4cc14a660cabddd7a92ddc56f30c.png",
-			"video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
-			"sliderImages": [
-				"/public//img/23483-6-bicycle-transparent-image.png",
-				"https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
-			]
-		},
-		{
-			"id": 6,
-			"title": "Велосипед 6",
-			"price": 2000,
-			"quantity": 1,
-			"category": "Дорожный",
-			"image": "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png",
-			"video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
-			"sliderImages": [
-				"/public//img/23483-6-bicycle-transparent-image.png",
-				"https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
-			]
-		},
-		{
-			"id": 7,
-			"title": "Велосипед 7",
-			"price": 2000,
-			"quantity": 1,
-			"category": "Горный",
-			"image": "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png",
-			"video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
-			"sliderImages": [
-				"/public//img/23483-6-bicycle-transparent-image.png",
-				"https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
-			]
-		}
-	],
-	"categories": [
-		{
-			"id": 1,
-			"title": "",
-			"visibleTitle": "Все велосипеды"
-		},
-		{
-			"id": 2,
-			"title": "Горный",
-			"visibleTitle": "Горный"
-		},
-		{
-			"id": 3,
-			"title": "Дорожный",
-			"visibleTitle": "Дорожный"
-		}
-	]
+  "bicycles": [
+    {
+      "id": 1,
+      "title": "Велосипед 1",
+      "price": 2000,
+      "quantity": 1,
+      "category": "Горный",
+      "image": "https://i.pinimg.com/originals/fc/0f/4c/fc0f4cc14a660cabddd7a92ddc56f30c.png",
+      "video": "https://youtu.be/HhS0U5CTQoY",
+      "sliderImages": [
+        "/public//img/23483-6-bicycle-transparent-image.png",
+        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Велосипед 2",
+      "price": 2000,
+      "quantity": 1,
+      "category": "Горный",
+      "image": "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png",
+      "video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
+      "sliderImages": [
+        "/public//img/23483-6-bicycle-transparent-image.png",
+        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Велосипед 3",
+      "price": 2000,
+      "quantity": 1,
+      "category": "Дорожный",
+      "image": "https://i.pinimg.com/originals/fc/0f/4c/fc0f4cc14a660cabddd7a92ddc56f30c.png",
+      "video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
+      "sliderImages": [
+        "/public//img/23483-6-bicycle-transparent-image.png",
+        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Велосипед 4",
+      "price": 2000,
+      "quantity": 1,
+      "category": "Горный",
+      "image": "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png",
+      "video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
+      "sliderImages": [
+        "/public//img/23483-6-bicycle-transparent-image.png",
+        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Велосипед 5",
+      "price": 2000,
+      "quantity": 1,
+      "category": "Дорожный",
+      "image": "https://i.pinimg.com/originals/fc/0f/4c/fc0f4cc14a660cabddd7a92ddc56f30c.png",
+      "video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
+      "sliderImages": [
+        "/public//img/23483-6-bicycle-transparent-image.png",
+        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Велосипед 6",
+      "price": 2000,
+      "quantity": 1,
+      "category": "Дорожный",
+      "image": "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png",
+      "video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
+      "sliderImages": [
+        "/public//img/23483-6-bicycle-transparent-image.png",
+        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Велосипед 7",
+      "price": 2000,
+      "quantity": 1,
+      "category": "Горный",
+      "image": "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png",
+      "video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
+      "sliderImages": [
+        "/public//img/23483-6-bicycle-transparent-image.png",
+        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "",
+      "visibleTitle": "Все велосипеды"
+    },
+    {
+      "id": 2,
+      "title": "Горный",
+      "visibleTitle": "Горный"
+    },
+    {
+      "id": 3,
+      "title": "Дорожный",
+      "visibleTitle": "Дорожный"
+    }
+  ],
+  "comments": [
+  
+  ]
 }

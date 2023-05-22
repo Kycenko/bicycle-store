@@ -4,6 +4,7 @@ import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
 export const bicycleApi = createApi({
 	reducerPath: 'bicycleApi',
 	baseQuery: fetchBaseQuery({baseUrl: 'http://localhost:8888'}),
+	tagTypes: ['Bicycles'],
 	endpoints: build => (
 		{
 			getBicycles: build.query({
@@ -16,8 +17,19 @@ export const bicycleApi = createApi({
 			}),
 			getBicycleCategory: build.query({
 				query: () => '/categories'
-			})
+			}),
+			getComments: build.query({
+				query: () => '/comments',
+				providesTags: ['Bicycles']
+			}),
+			addComment: build.mutation({
+				query: (body) => ({
+					url: '/comments',
+					method: 'POST',
+					body,
+				}),
+			}),
 		}
 	)
 })
-export const {useGetBicyclesQuery, useGetSingleBicycleQuery, useGetBicycleCategoryQuery} = bicycleApi
+export const {useGetBicyclesQuery, useGetSingleBicycleQuery, useGetBicycleCategoryQuery, useGetCommentsQuery, useAddCommentMutation} = bicycleApi

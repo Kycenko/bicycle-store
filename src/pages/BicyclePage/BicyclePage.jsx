@@ -1,7 +1,7 @@
 import Footer from "../../components/Layout/Footer/Footer.jsx";
 import Navigation from "../../components/Layout/Navigation/Navigation.jsx";
 import {useParams} from "react-router-dom";
-import {useGetSingleBicycleQuery} from "../../store/bicycle.api.js";
+import {useAddCommentMutation, useGetSingleBicycleQuery} from "../../store/bicycle.api.js";
 import styles from './BicyclePage.module.scss'
 import Spinner from "../../components/Layout/Spinner/Spinner.jsx";
 import {useState} from "react";
@@ -11,7 +11,14 @@ import AddBicycleInCart from "../../components/ui/buttons/AddBicycleInCart/AddBi
 const BicyclePage = () => {
 	const {id} = useParams()
 	const {data = [], isLoading} = useGetSingleBicycleQuery(id)
+	const [addComment] = useAddCommentMutation()
 	const [currentIndex, setCurrentIndex] = useState(0)
+	const [newComment, setNewComment] = useState('')
+	const handleAddComment = async () => {
+		await addComment({title: newComment, name: newComment}).unwrap()
+		setNewComment('')
+		
+	}
 	
 	const prevSlide = () => {
 		const isFirstSlide = currentIndex === 0
@@ -62,6 +69,9 @@ const BicyclePage = () => {
 							</div>
 						</div>
 					</div>
+				</div>
+				<div><input type="text" value={newComment} onChange={(e) => setNewComment(e.target.value)}/>
+					<button onClick={handleAddComment}>Добавить</button>
 				</div>
 			</div>
 			<Footer/>

@@ -1,0 +1,80 @@
+.container {
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px 15px;
+  max-width: 1200px;
+}
+
+
+.favoritePageTitle {
+  margin-top: 70px;
+  text-align: center;
+  color: #171718;
+  font-size: 2rem;
+}
+
+.favoritePageTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.favoritePageQuantity {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  .favoriteQuantityBtn {
+    background-color: #171718;
+    color: #fff;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+.favoritePageTable th,
+.favoritePageTable td {
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.favoritePageImage {
+  width: 350px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.favoritePageTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 30px 0;
+}
+
+.favoriteDelBtn {
+  background-color: red;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.favoriteAddBtn {
+  background-color: #171718;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  row-gap: 10px;
+}
+
+.favoriteOrderBtn {
+  display: flex;
+  justify-content: right;
+
+}
