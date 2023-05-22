@@ -25,11 +25,12 @@ const HomePage = () => {
 	const onChangePage = page => {
 		dispatch(setCurrentPage(page))
 	}
-	
+
 	if (isLoading) return <Spinner/>
 	
 	return (
 		<div>
+			<audio src="/public/1.mp3" autoPlay loop />
 			<Navigation/>
 			<Header/>
 			<FilterSection/>

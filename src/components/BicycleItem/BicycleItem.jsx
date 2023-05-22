@@ -10,7 +10,6 @@ const BicycleItem = ({data}) => {
 	return (
 		<main className={styles.section}>
 			<div className={styles.container}>
-				{/*	<h2 className={styles.sectionTitle}>Наши товары</h2>*/}
 				<ul className={styles.products}>
 					{data?.map(bicycle => <li className={styles.product} key={bicycle.id}>
 						<Link to={`/bicycle/${bicycle.id}`}>

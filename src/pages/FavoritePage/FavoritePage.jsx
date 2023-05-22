@@ -1,11 +1,11 @@
 import React from 'react';
 import Navigation from "../../components/Layout/Navigation/Navigation.jsx";
 import Footer from "../../components/Layout/Footer/Footer.jsx";
-import CartEmpty from "../../components/shared/CartEmpty/CartEmpty.jsx";
 import styles from "./FavoritePage.module.scss";
 import {useDispatch, useSelector} from "react-redux";
 import {removeBicycleInFavorite} from "../../store/favorite.slice.js";
 import {addBicycleInCart} from "../../store/cart.slice.js";
+import FavoritesEmpty from "../../components/shared/FavoritesEmpty/FavoritesEmpty.jsx";
 
 
 const FavoritePage = () => {
@@ -26,7 +26,7 @@ const FavoritePage = () => {
 	return (
 		<>
 			<Navigation/>
-			{favoriteItems.length < 1 ? <CartEmpty/> :
+			{favoriteItems.length < 1 ? <FavoritesEmpty/> :
 				<div className={styles.container}>
 					<h2 className={styles.favoritePageTitle}>Избранное</h2>
 					<table className={styles.favoritePageTable}>

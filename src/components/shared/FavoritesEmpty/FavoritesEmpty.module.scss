@@ -1,4 +1,4 @@
-.cartEmpty {
+.favoritesEmpty {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -7,11 +7,11 @@
   height: 50vh;
   text-align: center;
 
-  .cartEmptyImage {
+  .favoritesEmptyImage {
     width: 350px;
   }
 
-  .cartEmptyMessage {
+  .favoritesEmptyMessage {
     font-size: 25px;
   }
 }

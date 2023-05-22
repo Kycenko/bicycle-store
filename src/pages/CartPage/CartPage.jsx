@@ -4,11 +4,13 @@ import Navigation from "../../components/Layout/Navigation/Navigation.jsx";
 import Footer from "../../components/Layout/Footer/Footer.jsx";
 import {decreaseQuantity, increaseQuantity, removeBicycleInCart} from "../../store/cart.slice.js";
 import CartEmpty from "../../components/shared/CartEmpty/CartEmpty.jsx";
+import {useState} from "react";
+import OrderModal from "../../components/OrderModal/OrderModal.jsx";
 
 const CartPage = () => {
 	const dispatch = useDispatch()
 	const items = useSelector(state => state.cart.bicyclesInCart);
-	
+	const [modalOpen, setModalOpen] = useState(false);
 	
 	const handleDeleteBtn = () => {
 		dispatch(removeBicycleInCart(items[0].id))
@@ -24,13 +26,25 @@ const CartPage = () => {
 			dispatch(removeBicycleInCart(id));
 		}
 	};
-	const calculateTotalQuantity = () => {
+	 const calculateTotalQuantity = () => {
 		return items.reduce((total, item) => total + item.quantity, 0);
 		
 	};
 	const calculateTotalPrice = () => {
 		return items.reduce((total, item) => total + item.price * item.quantity, 0);
 	};
+
+
+
+
+	const openModal = () => {
+		setModalOpen(true);
+	};
+
+	const closeModal = () => {
+		setModalOpen(false);
+	};
+
 	return (
 		<>
 			<Navigation/>
@@ -67,7 +81,8 @@ const CartPage = () => {
 						<p>Общая стоимость: {calculateTotalPrice(items)} бел.руб</p>
 					</div>
 					<div className={styles.cartOrderBtn}>
-						<button>Оформить заказ</button>
+						<button onClick={openModal}>Оформить заказ</button>
+						{modalOpen && <OrderModal isOpen={modalOpen} onClose={closeModal} />}
 					</div>
 				</div>}
 			<Footer/>

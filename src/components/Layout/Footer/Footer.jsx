@@ -1,10 +1,12 @@
 import styles from './Footer.module.scss'
 import {Link} from "react-router-dom";
+import Map from "./Map.jsx";
 
 const Footer = () => {
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.container}>
+				<Map/>
 				<div className={styles.footerWrapper}>
 					<ul className={styles.social}>
 						<li className={styles.socialItem}>

@@ -1,12 +1,12 @@
 import React from 'react'
 import {useNavigate} from "react-router-dom";
 
-import styles from "./CommentsBlock.module.scss";
+import styles from "./ReviewsBlock.module.scss";
 
-const CommentsBlock = () => {
+const ReviewsBlock = () => {
 	const navigate = useNavigate()
 	const navigateToCart = () => {
-		navigate('/comments')
+		navigate('/reviews')
 	}
 	
 	return (
@@ -21,4 +21,4 @@ const CommentsBlock = () => {
 	)
 }
 
-export default CommentsBlock
+export default ReviewsBlock

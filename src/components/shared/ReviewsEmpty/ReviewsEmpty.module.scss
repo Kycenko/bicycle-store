@@ -1,16 +1,17 @@
-.notFound {
+.reviewsEmpty {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 50vh;
   text-align: center;
-}
 
-.notFoundImage {
-  width: 300px;
-}
+  .reviewsEmptyImage {
+    width: 350px;
+  }
 
-.notFoundMessage {
-  font-size: 25px;
+  .reviewsEmptyMessage {
+    font-size: 25px;
+  }
 }

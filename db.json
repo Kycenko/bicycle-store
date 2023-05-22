@@ -2,93 +2,94 @@
   "bicycles": [
     {
       "id": 1,
-      "title": "Велосипед 1",
-      "price": 2000,
+      "title": "Cube AIM Pro 29 L 2021",
+      "price": 2200,
+      "description": "29\", рама L, горный, кросс-кантри, алюминий, вилка амортизационная с ходом 100 мм, трансмиссия 24 скор. (3х8), переключатели: задний Shimano Tourney/передний Shimano, тормоз дисковый гидравлический, вес 14.4 кг",
       "quantity": 1,
       "category": "Горный",
-      "image": "https://i.pinimg.com/originals/fc/0f/4c/fc0f4cc14a660cabddd7a92ddc56f30c.png",
+      "image": "/public//img/1_1.jpeg",
       "video": "https://youtu.be/HhS0U5CTQoY",
       "sliderImages": [
-        "/public//img/23483-6-bicycle-transparent-image.png",
-        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+        "/public//img/1_1.jpeg",
+        "/public//img/1_2.jpeg"
       ]
     },
     {
       "id": 2,
-      "title": "Велосипед 2",
-      "price": 2000,
+      "title": "Stels Navigator 300",
+      "price": 430,
+      "description": "28\", рама 20\", городской, женский, сталь Hi-ten, вилка жесткая (сталь Hi-ten), трансмиссия 1 скор. (1х1), тормоз ножной, вес 17.4 кг",
       "quantity": 1,
-      "category": "Горный",
-      "image": "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png",
-      "video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
+      "category": "Городской",
+      "image": "/public//img/2_1.jpeg",
+      "video": "https://youtu.be/HhS0U5CTQoY",
       "sliderImages": [
-        "/public//img/23483-6-bicycle-transparent-image.png",
-        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+        "/public//img/2_1.jpeg"
       ]
     },
     {
       "id": 3,
-      "title": "Велосипед 3",
-      "price": 2000,
+      "title": "Krakken Barbossa 29 р.18 2021",
+      "price": 674,
+      "description": "29\", рама 18\", горный, алюминий, вилка амортизационная с ходом 100 мм, трансмиссия 21 скор. (3х7), тормоз дисковый механический",
       "quantity": 1,
-      "category": "Дорожный",
-      "image": "https://i.pinimg.com/originals/fc/0f/4c/fc0f4cc14a660cabddd7a92ddc56f30c.png",
-      "video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
+      "category": "Горный",
+      "image": "/public//img/3_1.jpeg",
+      "video": "https://youtu.be/HhS0U5CTQoY",
       "sliderImages": [
-        "/public//img/23483-6-bicycle-transparent-image.png",
-        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+        "/public//img/3_1.jpeg"
       ]
     },
     {
       "id": 4,
-      "title": "Велосипед 4",
-      "price": 2000,
+      "title": "Renome JR 26 2021",
+      "price": 599,
+      "description": "26\", рама XS, горный, женский, алюминий, вилка амортизационная, трансмиссия 21 скор. (3х7), переключатели: задний Microshift/передний Microshift, тормоз дисковый механический",
       "quantity": 1,
-      "category": "Горный",
-      "image": "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png",
-      "video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
+      "category": "Городской",
+      "image": "/public//img/4_1.jpg",
+      "video": "https://youtu.be/HhS0U5CTQoY",
       "sliderImages": [
-        "/public//img/23483-6-bicycle-transparent-image.png",
-        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+        "/public//img/4_1.jpg"
       ]
     },
     {
       "id": 5,
-      "title": "Велосипед 5",
-      "price": 2000,
+      "title": "Tropix Martinez 26",
+      "price": 1160,
+      "description": "26\", горный, алюминий, вилка амортизационная, трансмиссия 30 скор. (3х10), переключатели: задний Shimano Deore/передний Shimano Deore, тормоз дисковый механический",
       "quantity": 1,
-      "category": "Дорожный",
-      "image": "https://i.pinimg.com/originals/fc/0f/4c/fc0f4cc14a660cabddd7a92ddc56f30c.png",
-      "video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
+      "category": "Горный",
+      "image": "/public//img/5_1.jpeg",
+      "video": "https://youtu.be/HhS0U5CTQoY",
       "sliderImages": [
-        "/public//img/23483-6-bicycle-transparent-image.png",
-        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+        "/public//img/5_1.jpeg"
       ]
     },
     {
       "id": 6,
-      "title": "Велосипед 6",
-      "price": 2000,
+      "title": "Stels Pilot 750 24 Z010",
+      "price": 533,
+      "description": "24\", рама 16\", городской, женский, подростковый, сталь Hi-ten, складная рама, вилка жесткая, трансмиссия 6 скор. (1х6), переключатели: задний Shimano Tourney, тормоз ободной механический, вес 17.1 кг",
       "quantity": 1,
-      "category": "Дорожный",
-      "image": "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png",
-      "video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
+      "category": "Горный",
+      "image": "/public//img/6_1.jpeg",
+      "video": "https://youtu.be/HhS0U5CTQoY",
       "sliderImages": [
-        "/public//img/23483-6-bicycle-transparent-image.png",
-        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+        "/public//img/6_1.jpeg"
       ]
     },
     {
       "id": 7,
-      "title": "Велосипед 7",
-      "price": 2000,
+      "title": "AIST Rocky 1.0 Disc 26 р.13",
+      "price": 887,
+      "description": "26\", рама 13\", горный, кросс-кантри, алюминий, вилка амортизационная, трансмиссия 21 скор. (3х7), переключатели: задний Shimano Tourney/передний Shimano Tourney, тормоз дисковый механический",
       "quantity": 1,
-      "category": "Горный",
-      "image": "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png",
-      "video": "https://www.youtube.com/watch?v=k35Jt-VnzO8&t=2305s",
+      "category": "Городской",
+      "image": "/public//img/7_1.jpeg",
+      "video": "https://youtu.be/HhS0U5CTQoY",
       "sliderImages": [
-        "/public//img/23483-6-bicycle-transparent-image.png",
-        "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png"
+        "/public//img/7_1.jpeg"
       ]
     }
   ],
@@ -105,11 +106,10 @@
     },
     {
       "id": 3,
-      "title": "Дорожный",
-      "visibleTitle": "Дорожный"
+      "title": "Городской",
+      "visibleTitle": "Городской"
     }
   ],
-  "comments": [
-  
+  "reviews": [
   ]
 }
